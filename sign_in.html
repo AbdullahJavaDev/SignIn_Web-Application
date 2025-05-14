@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-r from-white to-gray-100 dark:from-gray-900 dark:to-black min-h-screen flex items-center justify-center">
+  <div class="flex max-w-5xl w-full bg-white dark:bg-gray-900 shadow-2xl rounded-3xl overflow-hidden">
+
+    <!-- Left: Form -->
+    <div class="w-full md:w-1/2 p-10">
+      <div class="flex items-center justify-between">
+        
+        <button id="toggleTheme" class="text-sm text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white">Toggle Dark Mode</button>
+      </div>
+      <h2 class="mt-8 text-3xl font-semibold text-black dark:text-white">Wellcome Back! <span class="text-pink-500">✌🏻</span></h2>
+      <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Please enter log in details below</p>
+
+      <form class="mt-8 space-y-6" action="SvpcetLogin">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+          <input type="email"  name="Email" class="w-full mt-1 px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-pink-500">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
+          <input type="password"  name="Password" class="w-full mt-1 px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-pink-500">
+        </div>
+
+        <div class="flex justify-between items-center text-sm">
+          <div></div>
+        </div>
+
+        <input class="w-full bg-black dark:bg-white text-white dark:text-black py-3 rounded-lg font-semibold hover:opacity-90 transition" type="submit">
+      </form>
+    </div>
+
+    <!-- Right: Image & Text -->
+    <div class="hidden md:flex w-1/2 bg-black text-white items-center justify-center relative">
+      <div class="text-center p-8">
+        <img src="loginill.png" alt="3D Illustration" class="mx-auto w-80">
+        <h3 class="mt-6 text-xl font-bold">Student Management System</h3>
+        <p class="text-sm text-gray-300 mt-2">Sri Venkatesa Perumal College Of Engineering And Technology</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById('toggleTheme').addEventListener('click', function () {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+
+</html>

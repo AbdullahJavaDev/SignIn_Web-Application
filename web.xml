@@ -1,0 +1,28 @@
+<web-app>
+<!-- welcome the file -->
+	
+	<welcome-file-list>
+		
+		<welcome-file>sign_in.html</welcome-file>
+	
+	</welcome-file-list>
+	
+<!-- Servlet declaraction -->
+<servlet>
+	
+	<servlet-name>Myservlet</servlet-name>
+	<servlet-class>org.svpcet.servlets.SvpcetLogin</servlet-class>
+
+</servlet>
+
+<!-- servlet Mapping -->
+<servlet-mapping>
+
+	<servlet-name>Myservlet</servlet-name>
+	<url-pattern>/SvpcetLogin</url-pattern>
+	
+</servlet-mapping>
+	
+	
+
+</web-app>
