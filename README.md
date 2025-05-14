@@ -34,5 +34,5 @@ This is a simple **JavaEE-based SignIn web application** built using the followi
 ![Login Page](https://github.com/AbdullahJavaDev/SignIn_Web-Application/blob/eb444a75cb7e2ad80e750381f6b072ab602c9d72/LoginPage.png)
 
 ##ValidUseCase:
-![ValidDetails]()
+![ValidDetails](https://github.com/AbdullahJavaDev/SignIn_Web-Application/blob/ecc41c075d14b8f9b38a464a5925da9a645c7c86/ValidUseCase.png)
 
